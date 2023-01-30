@@ -67,9 +67,16 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Card(
               child: Center(
-                child: Text('Welcome', style: TextStyle(
-                  fontSize: 80.0
-                ),)
+                child: Column(
+                  children: [
+                    Text('Welcome', style: TextStyle(
+                        fontSize: 80.0
+                    ),),
+                    Text('Migrade to v2', style: TextStyle(
+                        fontSize: 80.0
+                    ),),
+                  ],
+                )
               ),
             ),
             MaterialButton(child: Text('Hello'), onPressed: ()=>{
